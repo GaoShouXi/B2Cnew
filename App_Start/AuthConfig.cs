@@ -1,13 +1,13 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
 using BLL;
+using DAL;
 using DALFactory;
 using IDAL;
 using IRedisDAL;
 using IRepository;
 using RedisDAL;
 using Repository;
-using RepositoryFactory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,24 +33,25 @@ namespace B2CWebTemplate.App_Start
             Assembly service = Assembly.Load("BLL");
             Type[] stypes = service.GetTypes();
             builder.RegisterTypes(stypes).AsImplementedInterfaces();
+            Assembly Factory = Assembly.Load("DALFactory");
+            Type[] ftypes = Factory.GetTypes();
+            builder.RegisterTypes(ftypes).AsImplementedInterfaces();
+            Assembly dal = Assembly.Load("DAL");
+            Type[] dtypes = dal.GetTypes();
+            
+            builder.RegisterTypes(dtypes).AsImplementedInterfaces();
 
-            Assembly RepFactory = Assembly.Load("RepositoryFactory");
-            Type[] factory = RepFactory.GetTypes();
-            builder.RegisterTypes(factory).AsImplementedInterfaces();
+
 
 
             //builder.RegisterType<SessionFactory>().As<ISessionFactory>().InstancePerRequest();
-            builder.RegisterType<SessionFactory>().As<ISessionFactory>().InstancePerRequest();
-            builder.RegisterType<RepSingleton>().As<IRepSingleton>().InstancePerRequest();
-            builder.RegisterType<Redis>().As<IRedis>().InstancePerRequest();
-            RepSingleton rep = new RepSingleton();
-            SessionFactory session = new SessionFactory();
-            Redis redis = new Redis();
-            builder.RegisterInstance<RepSingleton>(rep);
-            builder.RegisterInstance<SessionFactory>(session);
-            builder.RegisterInstance<Redis>(redis);
+            //builder.RegisterType<SessionFactory>().As<ISessionFactory>().InstancePerHttpRequest();
+            //builder.RegisterType<Redis>().As<IRedis>().InstancePerHttpRequest();
+            builder.RegisterType<SessionFactory>().As<ISessionFactory>().InstancePerDependency();
+            builder.RegisterType<Redis>().As<IRedis>().InstancePerDependency();
 
-            builder.RegisterAssemblyTypes(typeof(RepAssemblyFactory).Assembly).Where(t => t.Name.EndsWith("Factory")).AsImplementedInterfaces();
+
+            builder.RegisterAssemblyTypes(typeof(BaseDataRepository).Assembly).Where(t => t.Name.EndsWith("DataRepository")).AsImplementedInterfaces();
 
 
             //builder.RegisterAssemblyTypes(typeof(RepSingleton).Assembly).Where(t => t.Name.EndsWith("RepSingleton")).AsImplementedInterfaces();

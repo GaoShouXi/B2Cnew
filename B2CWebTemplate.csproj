@@ -221,6 +221,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -933,7 +934,6 @@
     <Content Include="two\person\suggest.html" />
     <Content Include="two\person\wallet.html" />
     <Content Include="two\person\walletlist.html" />
-    <Content Include="Views\Login\login.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -944,9 +944,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -968,14 +966,19 @@
     <Content Include="Views\Manage\ManageLogins.cshtml" />
     <Content Include="Views\Manage\SetPassword.cshtml" />
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="two\.project" />
     <Content Include="two\AmazeUI-2.4.2\assets\fonts\fontawesome-webfont.eot" />
     <Content Include="two\AmazeUI-2.4.2\assets\fonts\fontawesome-webfont.ttf" />
     <Content Include="two\AmazeUI-2.4.2\assets\fonts\fontawesome-webfont.woff" />
     <Content Include="two\AmazeUI-2.4.2\assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="two\AmazeUI-2.4.2\assets\fonts\FontAwesome.otf" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Index1.cshtml" />
+    <Content Include="Views\Home\Index2.cshtml" />
+    <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -998,6 +1001,10 @@
     <ProjectReference Include="..\DALFactory\DALFactory.csproj">
       <Project>{80022440-D29D-4237-8246-F8ED905C847D}</Project>
       <Name>DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{5A282395-3DCB-49EA-B9AB-3DBAE0C324FC}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\IBLL\IBLL.csproj">
       <Project>{D0635D11-1965-461A-A5D3-AE0E07E119A3}</Project>
@@ -1026,10 +1033,6 @@
     <ProjectReference Include="..\RedisDAL\RedisDAL.csproj">
       <Project>{5A9562BC-E689-433D-A96A-8B2F66D5D267}</Project>
       <Name>RedisDAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RepositoryFactory\RepositoryFactory.csproj">
-      <Project>{3F952436-3438-42CF-A0CA-BBF22FB63C60}</Project>
-      <Name>RepositoryFactory</Name>
     </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{8921396A-EF20-480E-8C5F-7229E955C1B2}</Project>
