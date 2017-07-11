@@ -49,6 +49,7 @@ namespace B2CWebTemplate.App_Start
             //builder.RegisterType<Redis>().As<IRedis>().InstancePerHttpRequest();
             builder.RegisterType<SessionFactory>().As<ISessionFactory>().InstancePerDependency();
             builder.RegisterType<Redis>().As<IRedis>().InstancePerDependency();
+            builder.RegisterType<DapperDal>().As<IDapperDal>().InstancePerDependency();
 
 
             builder.RegisterAssemblyTypes(typeof(BaseDataRepository).Assembly).Where(t => t.Name.EndsWith("DataRepository")).AsImplementedInterfaces();

@@ -554,6 +554,7 @@
     <Content Include="one\person\refund.html" />
     <Content Include="one\person\safety.html" />
     <Content Include="one\person\setpay.html" />
+    <Content Include="Picture\1.jpg" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -976,8 +977,6 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\Index1.cshtml" />
-    <Content Include="Views\Home\Index2.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>

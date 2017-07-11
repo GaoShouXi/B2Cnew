@@ -3,6 +3,8 @@ using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -15,12 +17,21 @@ namespace B2CWebTemplate.Controllers
         {
             this.UserInfoService = UserService;
         }
-        public ActionResult Index()
+        public async  Task<ActionResult> Index()
         {
             //拿到cookie的值传进来
             //UserInfoService.Login();
-            UserInfo userTest = new UserInfo();
-            UserInfoService.AddEntity<UserInfo>(userTest);
+            ProductionInfo pro = new ProductionInfo();
+            ProductTypeInfo pt = new ProductTypeInfo();
+            IEnumerable<ProductTypeInfo> ptlist = new List<ProductTypeInfo>();
+            IEnumerable<ProductionInfo> prlist = new List<ProductionInfo>();
+
+            ptlist =await UserInfoService.SelectAllEntities<ProductTypeInfo>(pt);
+            
+            prlist =await UserInfoService.SelectAllEntities<ProductionInfo>(pro);
+          
+            ViewBag.TypeMenu = ptlist;
+            ViewBag.ProMenu = prlist;
             return View();
         }
 

@@ -26,7 +26,7 @@
             <ul class="message-l">
                 <div class="topMessage">
                     <div class="menu-hd">
-                        <a href="#" target="_top" class="h">亲，请登录</a>
+                        <a href="/Login/Index" target="_top" class="h">亲，请登录</a>
                         <a href="#" target="_top">免费注册</a>
                     </div>
                 </div>
@@ -80,15 +80,15 @@
     </div>
     <div class="shopNav">
         <div class="slideall">
-
+            
             <div class="long-title"><span class="all-goods">全部分类</span></div>
             <div class="nav-cont">
                 <ul>
                     <li class="index"><a href="#">首页</a></li>
-                    <li class="qc"><a href="#">闪购</a></li>
+                    @*<li class="qc"><a href="#">闪购</a></li>
                     <li class="qc"><a href="#">限时抢</a></li>
                     <li class="qc"><a href="#">团购</a></li>
-                    <li class="qc last"><a href="#">大包装</a></li>
+                    <li class="qc last"><a href="#">大包装</a></li>*@
                 </ul>
                 <div class="nav-extra">
                     <i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>我的福利
@@ -114,29 +114,28 @@
                                                 <div class="menu-srot">
                                                     <div class="sort-side">
                                                         <dl class="dl-sort">
-                                                            <dt><span title="蛋糕">蛋糕</span></dt>
-                                                            <dd><a title="蒸蛋糕" href="#"><span>蒸蛋糕</span></a></dd>
-                                                            <dd><a title="脱水蛋糕" href="#"><span>脱水蛋糕</span></a></dd>
-                                                            <dd><a title="瑞士卷" href="#"><span>瑞士卷</span></a></dd>
-                                                            <dd><a title="软面包" href="#"><span>软面包</span></a></dd>
-                                                            <dd><a title="马卡龙" href="#"><span>马卡龙</span></a></dd>
-                                                            <dd><a title="千层饼" href="#"><span>千层饼</span></a></dd>
-                                                            <dd><a title="甜甜圈" href="#"><span>甜甜圈</span></a></dd>
-                                                            <dd><a title="蒸三明治" href="#"><span>蒸三明治</span></a></dd>
-                                                            <dd><a title="铜锣烧" href="#"><span>铜锣烧</span></a></dd>
+                                                            @{
+                                                                List<Models.ProductTypeInfo> tplist = new List<Models.ProductTypeInfo>();
+                                                                tplist = ViewBag.TypeMenu;
+                                                                List<Models.ProductionInfo> prlist = new List<Models.ProductionInfo>();
+                                                                prlist = ViewBag.ProMenu;
+                                                                foreach (var tp in tplist)
+                                                                {
+                                         <dt><span title="@tp.TypeName">@tp.TypeName</span></dt>
+                                                                    foreach (var pr in prlist)
+                                                                    {
+                                                                        if (tp.id == pr.ProductTypeId)
+                                                                        {
+                                            <dd><a title="@pr.ProductName" href="#"><span>@pr.ProductName</span></a></dd>
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                              
+                                                            
+                                                           
                                                         </dl>
-                                                        <dl class="dl-sort">
-                                                            <dt><span title="蛋糕">点心</span></dt>
-                                                            <dd><a title="蒸蛋糕" href="#"><span>蒸蛋糕</span></a></dd>
-                                                            <dd><a title="脱水蛋糕" href="#"><span>脱水蛋糕</span></a></dd>
-                                                            <dd><a title="瑞士卷" href="#"><span>瑞士卷</span></a></dd>
-                                                            <dd><a title="软面包" href="#"><span>软面包</span></a></dd>
-                                                            <dd><a title="马卡龙" href="#"><span>马卡龙</span></a></dd>
-                                                            <dd><a title="千层饼" href="#"><span>千层饼</span></a></dd>
-                                                            <dd><a title="甜甜圈" href="#"><span>甜甜圈</span></a></dd>
-                                                            <dd><a title="蒸三明治" href="#"><span>蒸三明治</span></a></dd>
-                                                            <dd><a title="铜锣烧" href="#"><span>铜锣烧</span></a></dd>
-                                                        </dl>
+                                                       
 
                                                     </div>
                                                     <div class="brand-side">
