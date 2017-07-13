@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 /*公共*/
@@ -215,7 +215,7 @@ time, mark, audio, video {
 .nav-cont li::before{content: '\20';display: inline-block;height: 16px;border-right: 1px solid #d9d9d9;width: 0;vertical-align: middle;margin-left: -1px;}
 .nav-cont li a {font-size: 16px;color: #333;line-height: 36px;margin-left: -1px;padding: 0 25px;text-decoration: none;font-weight: 700;display: inline-block;vertical-align: middle;}
 
-.nav-cont .nav-extra{position: absolute;right:0px ;top:6px;font-size: 16px;color:#fcff00;line-height:33px;height:33px ;width:160px;text-align:center;background: url(../../images/extra.png);cursor: pointer;}
+.nav-cont .nav-extra{position: absolute;right:0px ;top:6px;font-size: 16px;color:#fcff00;line-height:33px;height:33px ;width:160px;text-align:center;background: url(..//one/images/extra.png);cursor: pointer;}
 .nav-cont .nav-extra i.nav-user{background:#000 ;color:#fff ;width: 33px;height: 33px;border-radius: 33px;position: absolute;left:-28px;z-index: 99;padding: 5px;overflow: hidden;}
 .nav-cont .nav-extra b{display:block;position: absolute;width: 45px;height: 45px;border-radius:45px;z-index: 1;left: -33px;top: -8px;background: #fff;}
 b.line{display: block;width:100%;height:2px ;border-bottom:2px solid #d2364c;position: absolute;top:180px;z-index:5;}	   
@@ -264,7 +264,7 @@ display: block;
 line-height:38px;
 width: 35px;
 height: 38px;
-background: url(../images/ibar_sprites.png) no-repeat;
+background: url(/one/images/ibar_sprites.png) no-repeat;
 }
 /*图标定位*/
 .item .setting {position:absolute;top: 10px;left: 10px;width: 18px;height: 19px;background-position: 0 0;}
@@ -294,7 +294,7 @@ cursor: pointer;color: #FFF; margin-bottom:10px;}
 .item a,.quick_toggle a{ display:block;
 width: 40px;
 height: 38px;cursor: pointer; position:relative; overflow:hidden; }
-.quick_toggle span{position:absolute;top:12px;left:12px;background: url(../images/ibar_sprites.png) no-repeat;}
+.quick_toggle span{position:absolute;top:12px;left:12px;background: url(/one/images/ibar_sprites.png) no-repeat;}
 .quick_toggle .kfzx{background-position:0 -175px;}
 .quick_toggle li:hover .kfzx{ background-position:-33px -175px;}
 .quick_toggle .mpbtn_qrcode {background-position: 0 -302px; position:absolute;top:12px;left:10px;}
@@ -314,9 +314,9 @@ height: 38px;cursor: pointer; position:relative; overflow:hidden; }
 
 
 .mp_tooltip {height: 38px;line-height: 38px;width: 92px;position: absolute;z-index: 2;left: -121px;top: 0;background: #2b2b2b;color: #d8d8d8;text-align: center;display: block;visibility: hidden;font-size:12px;}
-.icon_arrow_white {position: absolute;right: -5px;top: 15px;width: 5px;height: 9px;background:url(../images/ibar_sprites.png) no-repeat;background-position: 0 -253px;}
+.icon_arrow_white {position: absolute;right: -5px;top: 15px;width: 5px;height: 9px;background:url(/one/images/ibar_sprites.png) no-repeat;background-position: 0 -253px;}
 .icon_arrow_right_black {position: absolute;right: -5px;top: 15px;width: 5px;height: 9px;
-background:url(../images/ibar_sprites.png) no-repeat;background-position:0px -234px;overflow: hidden;}
+background:url(/one/images/ibar_sprites.png) no-repeat;background-position:0px -234px;overflow: hidden;}
 
 
 .mp_qrcode {padding: 10px;width: 148px;height: 150px;top: -50px;background: #fff;box-shadow: 0 0 5px rgba(0,0,0,.4);border-radius: 5px 0 0 5px;border: 1px solid #ccc;z-index: 3;position: absolute;left: -154px;display: none;}

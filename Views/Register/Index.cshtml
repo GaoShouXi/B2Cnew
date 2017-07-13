@@ -1,0 +1,180 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link rel="stylesheet" href="/one/AmazeUI-2.4.2/assets/css/amazeui.min.css" />
+    <link href="/one/css/dlstyle.css" rel="stylesheet" type="text/css">
+    <script src="/one/AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="/one/AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
+    <script>
+        $(function () {
+            
+        });
+        function CheckBox() {
+            if ($('#reader-me').is(":checked") != true) {
+                alert("请阅读并同意商城协议");
+            }
+        }
+        function SubmitEmail() {
+            CheckBox();
+            var e= $('#email').val();
+            $.post("/Register/RegisterMaker", { emailname: $('#email').val(), pwd: $('#pwd').val(), pwd1: $('#pwd1').val() }, function (data) {
+                if (data == "ok") {
+                    window.location.href = "/Login/Index";
+                }
+                else if (data == "bad") {
+                    alert("注册失败");
+                }
+                else if (data == "had") {
+                    alert("用户名已存在");
+                }
+                else {
+                    alert("发生未知的错误");
+                }
+            });
+           
+            if ($('#pwd').val() != $('#pwd1').val())
+            {
+                alert("您的两次密码输入不同");
+            }
+
+        }
+        function afterRegister(data)
+        {
+            if (data == "该用户名已存在") {
+                alert("该用户名已存在");
+            }
+            else if (data == "两次密码输入不同") {
+                alert("两次密码输入不同");
+            }
+            else {
+                window.location.href = "/Home/Index";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="login-boxtitle">
+        <a href="home/demo.html"><img alt="" src="/one/images/logobig.png" /></a>
+    </div>
+
+    <div class="res-banner">
+        <div class="res-main">
+            <div class="login-banner-bg"><span></span><img src="/one/images/big.jpg" /></div>
+            <div class="login-box">
+
+                <div class="am-tabs" id="doc-my-tabs">
+                    <ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify">
+                        <li class="am-active"><a href="">邮箱注册</a></li>
+                        <li><a href="">手机号注册</a></li>
+                    </ul>
+
+                    <div class="am-tabs-bd">
+                      
+                        <div class="am-tab-panel am-active">
+                            <form id="form1" method="post" action="/Register/RegisterMaker">
+                                <div class="user-email">
+                                    <label for="email"><i class="am-icon-envelope-o"></i></label>
+                                    <input type="email" name="emailname" id="email" placeholder="请输入邮箱账号">
+                                </div>
+                                <div class="user-pass">
+                                    <label for="password"><i class="am-icon-lock"></i></label>
+                                    <input type="password" name="pwd" id="pwd" placeholder="设置密码">
+                                </div>
+                                <div class="user-pass">
+                                    <label for="passwordRepeat"><i class="am-icon-lock"></i></label>
+                                    <input type="password" name="pwd1" id="pwd1" placeholder="确认密码">
+                                </div>
+                            </form>
+                                <div class="login-links">
+                                    <label for="reader-me">
+                                        <input id="reader-me" type="checkbox"> 点击表示您同意商城《服务协议》
+                                    </label>
+                                </div>
+                                <div class="am-cf">
+                                    <input type="submit" name="zhuce1" value="注册" class="am-btn am-btn-primary am-btn-sm am-fl" onclick="SubmitEmail()">
+                                </div>
+
+</div>
+                        <div class="am-tab-panel">
+                            <form method="post">
+                                <div class="user-phone">
+                                    <label for="phone"><i class="am-icon-mobile-phone am-icon-md"></i></label>
+                                    <input type="tel" name="" id="phone" placeholder="请输入手机号">
+                                </div>
+                                <div class="verification">
+                                    <label for="code"><i class="am-icon-code-fork"></i></label>
+                                    <input type="tel" name="" id="code" placeholder="请输入验证码">
+                                    <a class="btn" href="javascript:void(0);" onclick="sendMobileCode();" id="sendMobileCode">
+                                        <span id="dyMobileButton">获取</span>
+                                    </a>
+                                </div>
+                                <div class="user-pass">
+                                    <label for="password"><i class="am-icon-lock"></i></label>
+                                    <input type="password" name="" id="password" placeholder="设置密码">
+                                </div>
+                                <div class="user-pass">
+                                    <label for="passwordRepeat"><i class="am-icon-lock"></i></label>
+                                    <input type="password" name="" id="passwordRepeat" placeholder="确认密码">
+                                </div>
+                            </form>
+                            <div class="login-links">
+                                <label for="reader-me">
+                                    <input id="reader-me" type="checkbox"> 点击表示您同意商城《服务协议》
+                                </label>
+                            </div>
+                            <div class="am-cf">
+                                <input type="submit" name="" value="注册" class="am-btn am-btn-primary am-btn-sm am-fl">
+                            </div>
+
+                            <hr>
+                        </div>
+                            
+                        
+                        <script>
+									$(function() {
+									    $('#doc-my-tabs').tabs();
+									  })
+                        </script>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer ">
+            <div class="footer-hd ">
+                <p>
+                    <a href="# ">高守玺</a>
+                </p>
+            </div>
+            <div class="footer-bd ">
+                <p>
+                    <a href="# ">关于恒望</a>
+                    <a href="# ">合作伙伴</a>
+                    <a href="# ">联系我们</a>
+                    <a href="# ">网站地图</a>
+                    
+                </p>
+            </div>
+        </div>
+</body>
+
+</html>

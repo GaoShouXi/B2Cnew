@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 .comment-main{padding-bottom:10px ;}
 .item-pic {width: 90px;height: 90px;border: 1px solid #EEE;float: left;overflow: hidden; margin-left:5px;margin-right: 10px;}
@@ -11,12 +11,12 @@ img{width:100% ;}
 .item-opinion{border-top: 1px solid #F5F8FA;width: 100%;overflow: hidden;padding:10px 0px ;}
 .item-opinion li{float:left;width: 33.33%;text-align: center;font-size:14px ;cursor: pointer;}
 .item-opinion li i{display:inline-block;width:16px;height:16px;margin-right: 5px;}
-.item-opinion li i.op1,.item-opinion li i.op2{background:url(../images/iconfont-evaluate.png);background-size:16px 16px;}
-.item-opinion li i.op3{background:url(../images/iconfont-bad.png);background-size:16px 16px;}
+.item-opinion li i.op1,.item-opinion li i.op2{background:url(/one/images/iconfont-evaluate.png);background-size:16px 16px;}
+.item-opinion li i.op3{background:url(/one/images/iconfont-bad.png);background-size:16px 16px;}
 
-.item-opinion li i.op1.active{background:url(../images/iconfont-good.png);background-size:16px 16px;}
-.item-opinion li i.op2.active{background:url(../images/iconfont-middle.png);background-size:16px 16px;}
-.item-opinion li i.op3.active{background:url(../images/iconfont-badon.png);background-size:16px 16px;}
+.item-opinion li i.op1.active{background:url(/one/images/iconfont-good.png);background-size:16px 16px;}
+.item-opinion li i.op2.active{background:url(/one/images/iconfont-middle.png);background-size:16px 16px;}
+.item-opinion li i.op3.active{background:url(/one/images/iconfont-badon.png);background-size:16px 16px;}
 
 
 

@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 /*导航*/	
 body{background: #F8F8F8;}
@@ -11,7 +11,7 @@ img{width:100%;}
 #nav .category-content .long-title{background:#d2364c;color:#fff ;display: block;width:100%;}
 #nav .category-content .all-goods { display: block; width:100px;height: 36px; padding: 0; border-radius: 5px 5px 0 0;text-align: center; font-size: 14px; font-weight: 600; line-height: 36px;}
 #nav .category-content .all-goods em{ font: 12px/36px "Microsoft YaHei"; }
-.status .list i,.category-content .down-ico,.category-content .list-cake i,.category-content .list-nacake i,.category-content .list-tz i,.category-content .list-ny i,.category-content .list-xb i,.category-content .list-xl i{ background: url(../images/index_ico_png32.png) no-repeat;}
+.status .list i,.category-content .down-ico,.category-content .list-cake i,.category-content .list-nacake i,.category-content .list-tz i,.category-content .list-ny i,.category-content .list-xb i,.category-content .list-xl i{ background: url(/one/images/index_ico_png32.png) no-repeat;}
 .category-content .category{ z-index:113; width:79px;height:100%;border: 1px solid #dadad9; border-top: none; background: #fefefe; box-shadow:2px 2px 2px #dedede;}
 .category-content .down-ico{ position: absolute; top: 48px; left: 75px; width: 10px; height: 6px; background-position: 0 -131px; z-index: 11111; }
 .category-content .category-list li {  height:42px; margin-top: -2px;z-index:113;border:2px solid transparent ;}

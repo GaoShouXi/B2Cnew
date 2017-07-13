@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 
@@ -218,7 +218,7 @@ ul#J_AttrUL li {display: inline;float: left;width: 33.33%;}
 .tb-detail-list{position: relative;}
 .shopPromotion.gold .gold-list span{position: absolute;right: 10px;display: inline-block;cursor:pointer ;padding:0px 10px;} 
 .shopPromotion.gold .coupon{display: none;padding:10px  0px;}
-.shopPromotion.gold .coupon .gold-list li {border-radius:0;background:url(../images/couponli.png) no-repeat ;padding: 10px 10px;}
+.shopPromotion.gold .coupon .gold-list li {border-radius:0;background:url(/one/images/couponli.png) no-repeat ;padding: 10px 10px;}
 .shopPromotion.gold .coupon dt{margin-top:16px ;}
 
 /*销量*/
@@ -280,7 +280,7 @@ flex: 1 1 0%;line-height: 16px;cursor: pointer;}
 .tb-thumb .tb-selected div { background-color:#FFFFFF; border:medium none; }
 .tb-thumb li div { border:1px solid #CDCDCD; }
 div.zoomDiv { z-index:999; position:absolute; top:0px; left:0px; width:400px; height:400px; background:#ffffff; border:1px solid #CCCCCC; display:none; text-align:center; overflow:hidden; }
-div.zoomMask { position:absolute; background:url(../images/mask.png)repeat scroll 0 0 transparent; cursor:move; z-index:1; }
+div.zoomMask { position:absolute; background:url(/one/images/mask.png)repeat scroll 0 0 transparent; cursor:move; z-index:1; }
 	
 		
  /*价格*/	

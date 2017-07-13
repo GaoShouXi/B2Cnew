@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 .col-main{padding-top:0 ;}
 /*个人信息*/
@@ -11,7 +11,7 @@
 
 .m-userinfo .s-name {margin-top: 6px;display: block; color: #fff;line-height: 23px;}
 .s-prestige{ line-height:23px; padding:0px 5px;background:#F4F4F4;}
-.vip1{margin-left: 5px;display: inline-block;width: 14px;height: 14px;background:url(../images/%E5%9B%BE%E6%A0%87.png); background-position:-230px -505px;}
+.vip1{margin-left: 5px;display: inline-block;width: 14px;height: 14px;background:url(/one/images/%E5%9B%BE%E6%A0%87.png); background-position:-230px -505px;}
 a.i-trigger { cursor: pointer;position: relative; z-index: 2;display: block; padding-top: 10px; color: #fff; text-align: center;}
 
 
@@ -24,7 +24,7 @@ a.i-trigger { cursor: pointer;position: relative; z-index: 2;display: block; pad
 .m-userproperty p i{display: block;}
 .m-userproperty p i img{width:60px;height:60px;}
 .m-userproperty .s-bar{display: none;}
-.box-container-bottom {background: url(../images/side.png) repeat-x;height: 5px;}
+.box-container-bottom {background: url(/one/images/side.png) repeat-x;height: 5px;}
 .m-big{display: none;}
 /*订单*/
 .m-order{ overflow:hidden; margin-bottom:15px;margin-top: 15px;background:#fff;}
@@ -64,7 +64,7 @@ a em.m-num { margin-left: 4px;color: #F40;}
 .m-user {background:none}
 .m-bg,.navCir{display: none;}
 .col-main{padding-top:10px ;}
-.m-userinfo{background:url(../images/header-bg1.jpg);position: relative;border-radius: 0 0;}
+.m-userinfo{background:url(/one/images/header-bg1.jpg);position: relative;border-radius: 0 0;}
 /*.m-userinfo a,.m-userinfo .s-name{color:#000 ;}*/
 .user-patternIcon,.user-squaredIcon{ display:none;}
 .s-prestige.am-btn.am-round{border-radius:0 0 ;background: none;border:none ;color: #fff;padding:0px ;}
@@ -149,8 +149,8 @@ a em.m-num { margin-left: 4px;color: #F40;}
 .wrap-list {width:80%;}
 /*右边栏*/
 .wrap-right{ display:block;width:20%;float:left; margin-left:-20%; padding:0px 10px;}
-.i-history-trigger { background:url(../images/%E5%9B%BE%E6%A0%87.png);background-position: -33px -22px;left: 0px;}
-.i-setting-trigger { background:url(../images/%E5%9B%BE%E6%A0%87.png);background-position: -90px -22px;right: 0px;}
+.i-history-trigger { background:url(/one/images/%E5%9B%BE%E6%A0%87.png);background-position: -33px -22px;left: 0px;}
+.i-setting-trigger { background:url(/one/images/%E5%9B%BE%E6%A0%87.png);background-position: -90px -22px;right: 0px;}
 
  /*日历*/
 .day-list .s-bar{font-size: 15px; text-align: center;background:#f69 none repeat scroll 0% 0%;margin:0px ;color: #fff;}

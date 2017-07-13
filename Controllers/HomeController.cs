@@ -19,19 +19,22 @@ namespace B2CWebTemplate.Controllers
         }
         public async  Task<ActionResult> Index()
         {
-            //拿到cookie的值传进来
-            //UserInfoService.Login();
             ProductionInfo pro = new ProductionInfo();
             ProductTypeInfo pt = new ProductTypeInfo();
+            SellerInfo s = new SellerInfo();
+            ProductionActivityInfo pa = new ProductionActivityInfo();
             IEnumerable<ProductTypeInfo> ptlist = new List<ProductTypeInfo>();
             IEnumerable<ProductionInfo> prlist = new List<ProductionInfo>();
-
-            ptlist =await UserInfoService.SelectAllEntities<ProductTypeInfo>(pt);
-            
-            prlist =await UserInfoService.SelectAllEntities<ProductionInfo>(pro);
-          
+            IEnumerable<SellerInfo> slist = new List<SellerInfo>();
+            IEnumerable<ProductionActivityInfo> palist = new List<ProductionActivityInfo>();
+            ptlist = await UserInfoService.SelectAllEntities<ProductTypeInfo>(pt);
+            prlist = await UserInfoService.SelectAllEntities<ProductionInfo>(pro);
+            slist = await UserInfoService.SelectAllEntities<SellerInfo>(s);
+            palist = await UserInfoService.SelectAllEntities<ProductionActivityInfo>(pa);
             ViewBag.TypeMenu = ptlist;
             ViewBag.ProMenu = prlist;
+            ViewBag.SellerMenu = slist;
+            ViewBag.PaMenu = palist;
             return View();
         }
 

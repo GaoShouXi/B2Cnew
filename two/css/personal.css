@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 /*公共*/
@@ -152,13 +152,13 @@ hr{margin:5px 0px;}
 .card-box-name .bank-num4 { position: absolute;top: 12px; right: 60px;}
 /*信用卡*/
 .card-box-name .card-type-DC, .card-box-name .card-type-CC, .card-box-name .card-type-SCC {position: absolute;top: 12px; right: 5px;overflow: hidden; width: 49px;height: 18px;}
-.card-box-name .card-type-CC{ background: url(../images/cardtype.png) no-repeat left -18px;}
-.card-box-name .card-type-DC {background: url(../images/cardtype.png) no-repeat left top;}
+.card-box-name .card-type-CC{ background: url(/one/images/cardtype.png) no-repeat left -18px;}
+.card-box-name .card-type-DC {background: url(/one/images/cardtype.png) no-repeat left top;}
 .card-box-list .card-box:hover .card-box-name{background: linear-gradient(#FFFFFF, #E6E8EB);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E6E8EB');}
 .card-box-express {height: 37px; margin: 0 0 15px 0;background: #CFD2D4;border-top: 1px solid #ABADAF;}
 .card-box .express-status {float: left; padding: 9px 0 0 10px;}
 .card-box .express-status .asset-icon {display:inline-block; vertical-align: -2px; margin-right: 10px;width: 55px;
-height: 14px;background: url(../images/cardbg.png);}
+height: 14px;background: url(/one/images/cardbg.png);}
 .card-box .express-else { float: right;padding:8px 10px 0 0;}
 .card-box .express-else a{color:#0088CC ;}
 .card-detail {color: #676d70;padding: 4px 10px;}
@@ -307,7 +307,7 @@ li.person p i{position: absolute;left:0px;font-size: 15px;color:#fd6d37 ;width: 
 .nav-cont li::before{content: '\20';display: inline-block;height: 16px;border-right: 1px solid #d9d9d9;width: 0;vertical-align: middle;margin-left: -1px;}
 .nav-cont li a {font-size: 16px;color: #333;line-height: 36px;margin-left: -1px;padding: 0 25px;text-decoration: none;font-weight: 700;display: inline-block;vertical-align: middle;}
 
-.nav-cont .nav-extra{position: absolute;right:0px ;top:6px;font-size: 16px;color:#fcff00;line-height:33px;height:33px ;width:160px;text-align:center;background: url(../images/extra.png);cursor: pointer;}
+.nav-cont .nav-extra{position: absolute;right:0px ;top:6px;font-size: 16px;color:#fcff00;line-height:33px;height:33px ;width:160px;text-align:center;background: url(/one/images/extra.png);cursor: pointer;}
 .nav-cont .nav-extra i.nav-user{background:#000 ;color:#fff ;width: 33px;height: 33px;border-radius: 33px;position: absolute;left:-28px;z-index: 99;padding: 5px;overflow: hidden;}
 .nav-cont .nav-extra b{display:block;position: absolute;width: 45px;height: 45px;border-radius:45px;z-index: 1;left: -33px;top: -8px;background: #fff;}
 b.line{display: block;width:100%;height:2px ;border-bottom:2px solid #d2364c;}	   

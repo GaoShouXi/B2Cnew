@@ -8,7 +8,7 @@
 .trade-circle-select {position: absolute;right: 60px;top: 0px;height: 42px;z-index: 999;display:none;}
 .trade-circle-select a{color: #FCFCFC;}
 .current-circle {font-size: 14px;color: #FFF;text-decoration: none;display: block;padding: 10px 0px 2px;}
-.ebill-section span.title-tag {background-repeat: no-repeat;display: block;width: 42px;height:43px;z-index: 999;position: absolute;top: -6px;right: 10px;font-size: 14px;padding-top: 10px;font-weight: 400;overflow: hidden;background: url(../images/3CoOkxrFOP.png);background-position: -1734px -102px;}
+.ebill-section span.title-tag {background-repeat: no-repeat;display: block;width: 42px;height:43px;z-index: 999;position: absolute;top: -6px;right: 10px;font-size: 14px;padding-top: 10px;font-weight: 400;overflow: hidden;background: url(/one/images/3CoOkxrFOP.png);background-position: -1734px -102px;}
 .ebill-section span.title-tag i.num {font-size: 16px;text-align: center;padding-left:5px ;}
 
 /*内容*/
@@ -39,8 +39,8 @@ li.am-btn am-btn-danger anniu.ng-scope{display: block;width:100%;overflow: hidde
 span.catatory.fn-left.ng-binding{height: 19px; line-height:19px ;}
 
 /*收入*/
-.module-income .block-expense {display:none;width:25%;overflow: hidden;height:284px;background-color: #F2F9FB;background-repeat: no-repeat;padding-left: 80px;position: relative;float: left;background-position: -7px center;background-image:url(../images/YXARdXxj5.png);}
-.slide-button {position: absolute;top:50%;margin-top:-20px;left: 29px;height: 40px;width: 38px;background: url(../images/3CoOkxrFOP.png) no-repeat;background-position: -1817px -103px;}
+.module-income .block-expense {display:none;width:25%;overflow: hidden;height:284px;background-color: #F2F9FB;background-repeat: no-repeat;padding-left: 80px;position: relative;float: left;background-position: -7px center;background-image:url(/one/images/YXARdXxj5.png);}
+.slide-button {position: absolute;top:50%;margin-top:-20px;left: 29px;height: 40px;width: 38px;background: url(/one/images/3CoOkxrFOP.png) no-repeat;background-position: -1817px -103px;}
 .slide-button.right{cursor:pointer}
 
 .block-hidetitle {margin-top: 120px;font-size:20px;font-weight: 400;color: #555;}
@@ -54,7 +54,7 @@ h3.expense.income-title.block-title{display: block; background:#fff ;padding:0px
 /*银行卡*/
 .module-card .cards-carousel .mask {position: relative;overflow: hidden;height: 100px;list-style: outside none none;margin:15px 0 0 0 ;}
 .cards-carousel .mask .bac {background-repeat: no-repeat;width: 267px;height: 89px;margin-top: 6px;
-background-position: -887px -102px;background-image: url("../images/3CoOkxrFOP.png");}
+background-position: -887px -102px;background-image: url("/one/images/3CoOkxrFOP.png");}
 .cards-carousel .mask .bank{position: absolute;margin-top: 10px;padding: 5px 10px;top: 15px;left: 15px;font-size: 16px;text-indent: -9999em;
 width: 126px;height:36px;background-repeat: no-repeat;background-color: #FFF;background-position: 5px center;}
 .module-card .cards-carousel .details {position: absolute;top: 83px;right:3% ;cursor: pointer;}

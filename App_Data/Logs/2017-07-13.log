@@ -1,0 +1,121 @@
+------------------------------Start------------------------------
+2017-07-13 09:38:32.3726 - ERROR:尚未对布局页“~/Views/Main/Index.cshtml”调用“RenderBody”方法。System.Web.HttpException (0x80004005): 尚未对布局页“~/Views/Main/Index.cshtml”调用“RenderBody”方法。
+   在 System.Web.WebPages.WebPageBase.VerifyRenderedBodyOrSections()
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult) LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+------------------------------End------------------------------
+2017-07-13 11:15:57.6848 - ERROR:现在无法开始异步操作。异步操作只能在异步处理程序或模块中开始，或在页生存期中的特定事件过程中开始。如果此异常在执行 Page 时发生，请确保 Page 标记为 <%@ Page Async="true" %>。此异常也可能表明试图调用“异步无效”方法，在 ASP.NET 请求处理内一般不支持这种方法。相反，该异步方法应该返回一个任务，而调用方应该等待该任务。System.InvalidOperationException: 现在无法开始异步操作。异步操作只能在异步处理程序或模块中开始，或在页生存期中的特定事件过程中开始。如果此异常在执行 Page 时发生，请确保 Page 标记为 <%@ Page Async="true" %>。此异常也可能表明试图调用“异步无效”方法，在 ASP.NET 请求处理内一般不支持这种方法。相反，该异步方法应该返回一个任务，而调用方应该等待该任务。
+   在 System.Web.AspNetSynchronizationContext.OperationStarted()
+   在 System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create()
+   在 B2CWebTemplate.Controllers.RegisterController.RegisterMaker()
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.<>c__DisplayClass1.<WrapVoidAction>b__0(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult) LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+------------------------------End------------------------------
+2017-07-13 11:34:13.0618 - ERROR:数组不能为空。
+参数名: bytesSystem.ArgumentNullException: 数组不能为空。
+参数名: bytes
+   在 System.Text.Encoding.GetString(Byte[] bytes)
+   在 RedisDAL.RedisWriter.<HGet>d__29.MoveNext() 位置 C:\Users\GaoShouXi\Desktop\B2CWebTemplate\RedisDAL\RedisWriter.cs:行号 196
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 RedisDAL.RedisEntityAction.<RedisEntityHGet>d__4`1.MoveNext() 位置 C:\Users\GaoShouXi\Desktop\B2CWebTemplate\RedisDAL\RedisEntityAction.cs:行号 98
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Repository.BaseDataRepository.<GetEntityById>d__15`1.MoveNext() 位置 C:\Users\GaoShouXi\Desktop\B2CWebTemplate\Repository\BaseDataRepository.cs:行号 68
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 BLL.BaseService.<SelectEntityById>d__7`1.MoveNext() 位置 C:\Users\GaoShouXi\Desktop\B2CWebTemplate\BLL\BaseService.cs:行号 33
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 B2CWebTemplate.Controllers.RegisterController.<RegisterMaker>d__6.MoveNext() 位置 C:\Users\GaoShouXi\Desktop\B2CWebTemplate\B2CWebTemplate\Controllers\RegisterController.cs:行号 34
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult) LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+------------------------------End------------------------------
+2017-07-13 11:47:15.7537 - ERROR:未将对象引用设置到对象的实例。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+------------------------------End------------------------------
+2017-07-13 11:49:32.7235 - ERROR:未将对象引用设置到对象的实例。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+------------------------------End------------------------------
+2017-07-13 11:51:30.9277 - ERROR:数组不能为空。
+参数名: bytes LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+------------------------------End------------------------------
+2017-07-13 11:55:09.8945 - ERROR:数组不能为空。
+参数名: bytes LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 11:57:07.6939 - ERROR:数组不能为空。
+参数名: bytes LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:02:32.0426 - ERROR:数组不能为空。
+参数名: bytes LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:13:11.9589 - ERROR:未将对象引用设置到对象的实例。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:22:38.1001 - ERROR:未将对象引用设置到对象的实例。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:25:13.9605 - ERROR:值不能为 null。
+参数名: source LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:26:20.1069 - ERROR:值不能为 null。
+参数名: source LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:27:28.7845 - ERROR:值不能为 null。
+参数名: source LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:28:58.4495 - ERROR:未将对象引用设置到对象的实例。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:31:10.0400 - ERROR:未将对象引用设置到对象的实例。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:33:18.2972 - ERROR:未将对象引用设置到对象的实例。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:36:32.8393 - ERROR:ConnectionString 属性尚未初始化。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:38:02.6846 - ERROR:ConnectionString 属性尚未初始化。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:44:30.6197 - ERROR:ConnectionString 属性尚未初始化。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 12:57:17.3633 - ERROR:ConnectionString 属性尚未初始化。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 14:24:02.2564 - ERROR:未将对象引用设置到对象的实例。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 14:28:07.6313 - ERROR:未将对象引用设置到对象的实例。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 14:34:30.7418 - ERROR:未将对象引用设置到对象的实例。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 14:43:57.0004 - ERROR:未将对象引用设置到对象的实例。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 14:49:54.9930 - ERROR:ConnectionString 属性尚未初始化。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 14:52:18.3046 - ERROR:现在无法开始异步操作。异步操作只能在异步处理程序或模块中开始，或在页生存期中的特定事件过程中开始。如果此异常在执行 Page 时发生，请确保 Page 标记为 <%@ Page Async="true" %>。此异常也可能表明试图调用“异步无效”方法，在 ASP.NET 请求处理内一般不支持这种方法。相反，该异步方法应该返回一个任务，而调用方应该等待该任务。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 14:53:11.9983 - ERROR:现在无法开始异步操作。异步操作只能在异步处理程序或模块中开始，或在页生存期中的特定事件过程中开始。如果此异常在执行 Page 时发生，请确保 Page 标记为 <%@ Page Async="true" %>。此异常也可能表明试图调用“异步无效”方法，在 ASP.NET 请求处理内一般不支持这种方法。相反，该异步方法应该返回一个任务，而调用方应该等待该任务。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 
+2017-07-13 14:54:50.7905 - ERROR:现在无法开始异步操作。异步操作只能在异步处理程序或模块中开始，或在页生存期中的特定事件过程中开始。如果此异常在执行 Page 时发生，请确保 Page 标记为 <%@ Page Async="true" %>。此异常也可能表明试图调用“异步无效”方法，在 ASP.NET 请求处理内一般不支持这种方法。相反，该异步方法应该返回一个任务，而调用方应该等待该任务。 LogService.NLogWriter.WriteLogInfo(C:\Users\GaoShouXi\Desktop\B2CWebTemplate\LogService\NLogWriter.cs:15) 

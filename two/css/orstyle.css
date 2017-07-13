@@ -52,12 +52,12 @@ img{width: 100%;}
 .m-progress-list .step {display: inline-block;width:60px;text-align: center;color: #999;letter-spacing: -5px;}
 .m-progress-list .stage-name {padding-top: 10px;font-size: 12px;line-height: 14px;
 letter-spacing: normal;word-spacing: normal;}
-.u-progress-stage-bg {position: relative;display: inline-block;background-image: url(../images/sprite.png);
+.u-progress-stage-bg {position: relative;display: inline-block;background-image: url(/one/images/sprite.png);
 background-position: -45px -135px;width: 29px;height: 29px;}
 /*变换的背景*/
 .u-stage-icon-inner .bg {position: absolute;left: 0px;top: 0px;}
-.step-1 .u-stage-icon-inner .bg {background-image: url(../images/sprite.png);background-position: -79px -135px;width: 19px;height: 19px;}
-.step-2 .u-stage-icon-inner .bg {background-image: url(../images/sprite.png);background-position: -103px -135px;width: 19px;height: 19px;}
+.step-1 .u-stage-icon-inner .bg {background-image: url(/one/images/sprite.png);background-position: -79px -135px;width: 19px;height: 19px;}
+.step-2 .u-stage-icon-inner .bg {background-image: url(/one/images/sprite.png);background-position: -103px -135px;width: 19px;height: 19px;}
 
 .u-stage-icon-inner {position: relative;z-index: 20;display: inline-block;width: 19px;height: 19px;line-height: 19px;
 vertical-align: top;margin-top: 5px;margin-left: -24px;color: #b5b5b5;font-size: 12px;letter-spacing: normal;word-spacing: normal;}
@@ -73,7 +73,7 @@ vertical-align: top;margin-top: 5px;margin-left: -24px;color: #b5b5b5;font-size:
 .order-logistics span.icon{position: absolute;right: 10px;top:50%;margin-top:-10px ;}
 /*收货地址*/
 .order-addresslist{font-size:14px ;width:100% ;padding: 10px;border-top: 1px solid #E4EAEE;position: relative;}
-.icon-add{background: url(../images/addicon.png) 4px 3px no-repeat;width: 20px;height:20px ;position: absolute;top:50%;margin-top:-10px ;}
+.icon-add{background: url(/one/images/addicon.png) 4px 3px no-repeat;width: 20px;height:20px ;position: absolute;top:50%;margin-top:-10px ;}
 .new-mu_l2a,.new-tit.new-p-re {padding: 2px 0px 2px 30px;display: block;}
 .user-orderinfo .order-title,.user-orderinfo .td-status p.Mystatus{display: none;}
 
@@ -156,7 +156,7 @@ ul.td-changeorder {width:20%}
 .order-infoaside{margin:20px 0px;overflow: hidden;max-width:900px ;}
 .order-logistics{float:right;width:65% ;border: none;height:170px ;position: relative;}
 .order-addresslist{float: left;border: none;width:280px;height:170px;padding:0px 10px;}
-.order-address{width:252px;background: url(../images/peraddbg.png)no-repeat scroll 0% 0%;height: 151px;margin:0px auto;padding: 10px;}
+.order-address{width:252px;background: url(/one/images/peraddbg.png)no-repeat scroll 0% 0%;height: 151px;margin:0px auto;padding: 10px;}
 .icon-add,.order-logistics .icon-log {top:0px;margin-top:12px}
 .inquire{display: block;position: absolute;bottom:50px;}
 .order-logistics span.icon {display: none;}
